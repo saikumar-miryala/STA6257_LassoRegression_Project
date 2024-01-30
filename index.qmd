@@ -1,5 +1,5 @@
 ---
-title: "Sample Report - Data Science Capstone"
+title: "Logistic Regression - Data Science Capstone"
 author: "Sai kumar miryala"
 date: '`r Sys.Date()`'
 format:
@@ -19,7 +19,7 @@ editor:
 
 ## Introduction
 
-### What is "mehtod"?
+### What is "method"?
 
 This is an introduction to Kernel regression, which is a non-parametric
 estimator that estimates the conditional expectation of two variables
@@ -38,61 +38,30 @@ This section is going to cover the literature review...
 
 ## Methods
 
-The common non-parametric regression model is
-$Y_i = m(X_i) + \varepsilon_i$, where $Y_i$ can be defined as the sum of
-the regression function value $m(x)$ for $X_i$. Here $m(x)$ is unknown
-and $\varepsilon_i$ some errors. With the help of this definition, we
-can create the estimation for local averaging i.e. $m(x)$ can be
-estimated with the product of $Y_i$ average and $X_i$ is near to $x$. In
-other words, this means that we are discovering the line through the
-data points with the help of surrounding data points. The estimation
-formula is printed below [@R-base]:
+## Research papers:
 
-$$
-M_n(x) = \sum_{i=1}^{n} W_n (X_i) Y_i  \tag{1}
-$$ $W_n(x)$ is the sum of weights that belongs to all real numbers.
-Weights are positive numbers and small if $X_i$ is far from $x$.
+#Validation of prediction models based on lasso regression with multiply imputed data
 
-Another equation:
+The purpose of this paper is to evaluate and discuss the optimism in the discriminative performance of a lasso model for predicting dyspnea in Chronic Obstructive Pulmonary Disease (COPD) patients.
 
-$$
-y_i = \beta_0 + \beta_1 X_1 +\varepsilon_i
-$$
+The study used a lasso model to predict dyspnea in Chronic Obstructive Pulmonary Disease patients. Researchers evaluated optimism by comparing four ways for handling multiply imputed data in the bootstrap procedure, which involved resampling completed datasets and incomplete datasets with further imputation.
 
-## Analysis and Results
+The study focuses on the lasso model's optimistic discriminative performance as well as the sensitivity of optimism estimations to imputed data handling, showing the significance of precise model validation.
 
-### Data and Visualization
+The results reveal optimistic discriminative performance and suboptimal calibration of the lasso model in predicting dyspnea in COPD patients.
 
-A study was conducted to determine how...
+#LASSO Regression Modeling on Prediction of Medical Terms among Seafarers’ Health Documents Using Tidy Text Mining.
 
-```{r, warning=FALSE, echo=T, message=FALSE}
-# loading packages 
-library(tidyverse)
-library(knitr)
-library(ggthemes)
-library(ggrepel)
-library(dslabs)
-```
+The article may confront obstacles in analysing health data from seafarers, as well as potential biases and restrictions in generalising findings to other situations.
 
-```{r, warning=FALSE, echo=TRUE}
-# Load Data
-kable(head(murders))
+The paper's goal is to predict medical terms in seafarers' health papers using LASSO regression & tidy text mining, recognising the importance of the analysis of sentiment and adding to the creation of an Epidemiological Observatory of Seafarers' Pathologies and Injuries.
 
-ggplot1 = murders %>% ggplot(mapping = aes(x=population/10^6, y=total)) 
+This research is important because it uses advanced approaches to forecast medical terminology in sailors' health records, hence improving medical judgements in remote maritime. It also helps to establish a framework for better understanding and controlling the health of seafarers.
 
-  ggplot1 + geom_point(aes(col=region), size = 4) +
-  geom_text_repel(aes(label=abb)) +
-  scale_x_log10() +
-  scale_y_log10() +
-  geom_smooth(formula = "y~x", method=lm,se = F)+
-  xlab("Populations in millions (log10 scale)") + 
-  ylab("Total number of murders (log10 scale)") +
-  ggtitle("US Gun Murders in 2010") +
-  scale_color_discrete(name = "Region")+
-      theme_bw()
-  
 
-```
+
+
+
 
 ### Statistical Modeling
 
