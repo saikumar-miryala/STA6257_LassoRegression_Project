@@ -30,8 +30,7 @@ which is random. The goal of a kernel regression is to discover the
 non-linear relationship between two random variables. To discover the
 non-linear relationship, kernel estimator or kernel smoothing is the
 main method to estimate the curve for non-parametric statistics. In
-kernel estimator, weight function is known as kernel function
-[@efr2008]. Cite this paper [@bro2014principal]. The GEE [@wang2014].
+kernel estimator, weight function is known as kernel function .
 
 This is my work and I want to add more work...
 
@@ -95,7 +94,17 @@ to ridge regression. The method's versatility extends to generalized
 regression models and tree-based models, as briefly discussed in the
 paper.
 
-# 
+# Predicting ship fuel consumption based on LASSO regression
+
+The paper tackles the complex task of predicting ship fuel consumption
+during voyages, dealing with various factors like main-engine status,
+cargo weight, and weather conditions. To address the challenge of highly
+correlated variables, they use the LASSO regression algorithm, which not
+only helps in variable selection but also improves the model's
+interpretability and accuracy. The proposed ship fuel consumption
+prediction model outperforms existing methods in experiments, showing
+promise for more reliable fuel consumption calculations in maritime
+scenarios.
 
 ### Statistical Modeling
 
@@ -105,4 +114,6 @@ paper.
 
 ### Conclusion
 
-## References
+## References:
+
+1.  https://www.sciencedirect.com/science/article/abs/pii/S1361920917302109
