@@ -112,8 +112,6 @@ scenarios.
 
 ```
 
-### Conclusion
-
 ## References:
 
 1.  https://www.sciencedirect.com/science/article/abs/pii/S1361920917302109
