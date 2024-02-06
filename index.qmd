@@ -59,9 +59,12 @@ The paper's goal is to predict medical terms in seafarers' health papers using L
 This research is important because it uses advanced approaches to forecast medical terminology in sailors' health records, hence improving medical judgements in remote maritime. It also helps to establish a framework for better understanding and controlling the health of seafarers.
 
 
+# Regression Shrinkage and Selection via the Lasso
+
+The paper proposes a fresh approach to estimation in linear models called the 'lasso,' which minimizes residual sum of squares under a constraint that limits the sum of absolute values of coefficients. This constraint promotes interpretability by often setting some coefficients to exactly 0. Simulation studies indicate that the lasso combines the benefits of both subset selection and ridge regression, providing interpretable models akin to subset selection and stability comparable to ridge regression. The method's versatility extends to generalized regression models and tree-based models, as briefly discussed in the paper.
 
 
-
+# 
 
 ### Statistical Modeling
 
